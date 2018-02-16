@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Playback"
         mc:Ignorable="d"
-        Title="Playback" Height="350" Width="525">
-    <Grid>
+        Title="Playback" Height="444.8" Width="525">
+    <Grid Margin="0,0,0.4,1.4">
         <TextBox x:Name="txtRuta" HorizontalAlignment="Left" Height="23" Margin="57,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" IsEnabled="False"/>
         <Button x:Name="btnBuscar" Content="Examinar" HorizontalAlignment="Left" Margin="411,27,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnBuscar_Click"/>
         <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="211,136,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnStop_Click" IsEnabled="False"/>
@@ -28,6 +28,10 @@
         <Label x:Name="lblSegundos" Content="Segundos" HorizontalAlignment="Left" Height="30" Margin="171,171,0,0" VerticalAlignment="Top" Width="78"/>
         <TextBox x:Name="txtArchivo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" Margin="281,201,0,0"/>
         <Label x:Name="lblArchivo" Content="Archivo" HorizontalAlignment="Left" Height="30" Margin="281,171,0,0" VerticalAlignment="Top" Width="78"/>
+        <Button x:Name="btnOffset" Content="Generar archivo con OffsetProvider" HorizontalAlignment="Left" Margin="57,289,0,0" VerticalAlignment="Top" Width="211" Click="btnOffset_Click"/>
+        <Button x:Name="btnReproducirSeñal" Content="Reproducir señal" HorizontalAlignment="Left" Height="24" Margin="57,319,0,0" VerticalAlignment="Top" Width="149" Click="btnReproducirSeñal_Click"/>
+        <Slider HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Slider x:Name="sldFrecuencia" HorizontalAlignment="Left" Margin="51,371,0,0" VerticalAlignment="Top" Width="268" Minimum="20" Maximum="20000" Value="5000" ValueChanged="sldFrecuencia_ValueChanged"/>
 
     </Grid>
 </Window>

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Playback"
         mc:Ignorable="d"
-        Title="Playback" Height="444.8" Width="525">
-    <Grid Margin="0,0,0.4,1.4">
+        Title="Playback" Height="579.2" Width="525">
+    <Grid Margin="0,0,0.4,3.6">
         <TextBox x:Name="txtRuta" HorizontalAlignment="Left" Height="23" Margin="57,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" IsEnabled="False"/>
         <Button x:Name="btnBuscar" Content="Examinar" HorizontalAlignment="Left" Margin="411,27,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnBuscar_Click"/>
         <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="211,136,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnStop_Click" IsEnabled="False"/>
@@ -32,6 +32,18 @@
         <Button x:Name="btnReproducirSeñal" Content="Reproducir señal" HorizontalAlignment="Left" Height="24" Margin="57,319,0,0" VerticalAlignment="Top" Width="149" Click="btnReproducirSeñal_Click"/>
         <Slider HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Slider x:Name="sldFrecuencia" HorizontalAlignment="Left" Margin="51,371,0,0" VerticalAlignment="Top" Width="268" Minimum="20" Maximum="20000" Value="5000" ValueChanged="sldFrecuencia_ValueChanged"/>
+        <Button x:Name="btnDo" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="167,436,0,0" Height="79" Background="White" Click="btnDo_Click"/>
+        <Button x:Name="btnRe" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="187,436,0,0" Height="79" Background="White" Click="btnRe_Click"/>
+        <Button x:Name="btnDoSostenido" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="12" Margin="181,436,0,0" Height="39" Background="Black" Click="btnDoSostenido_Click"/>
+        <Button x:Name="btnMi" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="207,436,0,0" Height="79" Background="White" Click="btnMi_Click"/>
+        <Button x:Name="btnFa" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="227,436,0,0" Height="79" Background="White" Click="btnFa_Click"/>
+        <Button x:Name="btnSol" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="247,436,0,0" Height="79" Background="White" Click="btnSol_Click"/>
+        <Button x:Name="btnLa" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="267,436,0,0" Height="79" Background="White" Click="btnLa_Click"/>
+        <Button x:Name="btnSi" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="287,436,0,0" Height="79" Background="White" Click="btnSi_Click"/>
+        <Button x:Name="btnReSostenido" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="12" Margin="201,436,0,0" Height="39" Background="Black" Click="btnReSostenido_Click"/>
+        <Button x:Name="btnFaSostenido" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="12" Margin="241,436,0,0" Height="39" Background="Black" Click="btnFaSostenido_Click"/>
+        <Button x:Name="btnSolSostenido" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="12" Margin="261,436,0,0" Height="39" Background="Black" Click="btnSolSostenido_Click"/>
+        <Button x:Name="btnLaSostenido" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="12" Margin="281,436,0,0" Height="39" Background="Black" Click="btnLaSostenido_Click"/>
 
     </Grid>
 </Window>

@@ -302,5 +302,261 @@ namespace Playback
             }
                
         }
+
+        //piano
+
+        private void btnDo_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 261;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+            
+            
+            
+            output.Init(offsetProvider);
+            output.Play();
+
+        }
+
+        private void btnDoSostenido_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 277;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnRe_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 293;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnReSostenido_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 311;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnMi_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 329;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnFa_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 349;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnFaSostenido_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 369;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnSol_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 392;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnSolSostenido_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 415;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnLa_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 440;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnLaSostenido_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 466;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+        private void btnSi_Click(object sender, RoutedEventArgs e)
+        {
+            var sampleRate = 44100;
+            var channelCount = 1;
+            var seconds = 1;
+            signalGenerator = new SignalGenerator();
+            signalGenerator.Frequency = 493;
+            signalGenerator.Gain = 0.5;
+
+            var offsetProvider =
+               new OffsetSampleProvider(signalGenerator);
+            offsetProvider.TakeSamples = sampleRate * seconds * channelCount;
+
+            output = new WaveOutEvent();
+
+
+
+            output.Init(offsetProvider);
+            output.Play();
+        }
+
+       
     }
 }
